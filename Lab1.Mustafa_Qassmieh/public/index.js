@@ -1,5 +1,6 @@
 import { fetcher } from "./script/fetch.js";
 import { dom } from "/script/htmlHandler.js";
+import {table} from "./script/toDelLater.js";
 
 async function main() {
     const searchBtn = document.querySelector('#search-btn');
@@ -9,6 +10,22 @@ async function main() {
     
     const recipes = await fetcher.fetchAllRecipes();
 
+    // const table = document.createElement('table');
+    // table.classList.add('recipe-table');
+
+    // const thead = document.createElement('thead');
+    // thead.innerHTML = `
+    //     <tr>
+    //         <th>Name</th>
+    //         <th>Ingredients</th>
+    //         <th>Instructions</th>
+    //         <th>Time</th>
+    //         <th>Origin</th>
+    //         <th>Spice Level</th>
+    //         <th>Actions</th>
+    //     </tr>
+    // `;
+    table.appendChild(thead);
     const createButton = document.createElement('button');
     createButton.textContent = 'Add New Recipe';
     createButton.id = 'create-recipe-button';
