@@ -1,0 +1,17 @@
+{
+  "name": "lab1.mustafa_qassmieh",
+  "version": "1.0.0",
+  "description": "this is an application to get our foot wet into the big sea of full-stack",
+  "main": "app.js",
+  "scripts": {
+    "test": "node app.js"
+  },
+  "author": "Mustafa Qassmieh",
+  "type": "module",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.4.7",
+    "mongoose": "^8.13.2",
+    "morgan": "^1.10.0"
+  }
+}
