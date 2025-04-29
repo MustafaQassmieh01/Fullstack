@@ -4,7 +4,10 @@
   "description": "this is an application to get our foot wet into the big sea of full-stack",
   "main": "app.js",
   "scripts": {
-    "test": "node app.js"
+    "test": "node app.js",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "server": "nodemon server/index.js",
+    "client": "cd client && npm run dev"
   },
   "author": "Mustafa Qassmieh",
   "type": "module",
