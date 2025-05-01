@@ -14,4 +14,4 @@ router.post('/api/recipes', recipeController.createRecipe);
 router.put('/api/recipes/:id', recipeController.updateRecipe);
 router.delete('/api/recipes/:id', recipeController.delete);
 
-export default router
+
