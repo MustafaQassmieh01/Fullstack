@@ -1,6 +1,6 @@
-import {ProjectAssignment} from "../models/projectAssignment";
-import { Employee } from "../models/employee.js";
-import { Project } from "../models/project.js";
+import ProjectAssignment from "../models/projectAssignment.js";
+import  Employee  from "../models/employee.js";
+import  Project  from "../models/project.js";
 
 export const AssignmentController = {};
 

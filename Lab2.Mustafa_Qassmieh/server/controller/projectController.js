@@ -1,4 +1,4 @@
-import {project} from "../models/project.js";
+import project from "../models/project.js";
 
 
 export const ProjectController = {};

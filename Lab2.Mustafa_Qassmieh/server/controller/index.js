@@ -1,6 +1,6 @@
-import { AssignmentController } from "./assignmentController";
-import { EmployeeController } from "./employeeController";
-import { ProjectController } from "./projectController";
+import { AssignmentController } from "./assignmentController.js";
+import { EmployeeController } from "./employeeController.js";
+import { ProjectController } from "./projectController.js";
 
 export const Controller = {};
 

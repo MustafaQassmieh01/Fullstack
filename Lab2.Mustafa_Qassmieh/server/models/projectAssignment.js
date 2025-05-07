@@ -1,7 +1,7 @@
 import mongoose from "mongoose";
 
 const projectAssignmentSchema = new mongoose.Schema({
-    employee_id: { type: mongoose.Schema.Types.ObjectId,
+    employee_id: { type: mongoose.Schema.Types.String,
         ref:"Employee",
         required: true },
     project_code: { type: mongoose.Schema.Types.String,
