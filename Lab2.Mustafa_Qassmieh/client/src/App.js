@@ -14,8 +14,10 @@ function App() {
     <div className="App">
         <Navbar />
         <HeroSection />
+        <main className='main'>
         <Assignments />
         <Editor />
+        </main>
         <Footer />
     </div>
   );
