@@ -5,17 +5,21 @@ import './Assignments.css';
 
 function Assignments() {
   const [assignments, setAssignments] = useState([]);
+
+  const fetchAssignments = async () => {
+    try {
+      const data = await Assignment.getAssignments();
+      setAssignments(data);
+    } catch (error) {
+      console.error("Failed to fetch assignments:", error);
+    }
+  }
   
   useEffect(() => {
-    const fetchAssignments = async () => {
-      try {
-        const data = await Assignment.getAssignments();
-        setAssignments(data);
-      } catch (error) {
-        console.error("Failed to fetch assignments:", error);
-      }
-    }
     fetchAssignments();
+    const interval = setInterval(fetchAssignments,60000); // 60 seconds
+    
+    return () => clearInterval(interval); 
   }, []);
 
   return (
