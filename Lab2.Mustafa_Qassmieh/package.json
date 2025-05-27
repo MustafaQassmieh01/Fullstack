@@ -7,7 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "concurrently \"npm run server\" \"npm run client\"",
     "server": "nodemon server/server.js",
-    "client": "cd client && npm start",
+    "client": "cd my-app && npm start",
     "start-server": "cd server && node server.js"
   },
   "author": "Mustafa",

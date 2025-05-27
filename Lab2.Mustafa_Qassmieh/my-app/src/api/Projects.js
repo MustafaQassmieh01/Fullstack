@@ -1,20 +1,20 @@
-export const Employee = {};
+export const Project = {};
 
-Employee.createNew = async (employeeData) => {
-    try {
-        const response = await fetch('/api/employees', {
+Project.createProject = async (newProject) => {
+    try{
+        const response = await fetch('http://localhost:5000/api/projects', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
             },
-            body: JSON.stringify(employeeData)
+            body: JSON.stringify(newProject)
         });
         if (!response.ok) {
             throw new Error('Network response was not ok' + response.statusText);
         }
         return await response.json();
-    } catch (error) {
-        console.error('Error creating employee:', error);
+    }catch (error) {
+        console.error('Error creating project:', error);
         throw error;
     }
 }

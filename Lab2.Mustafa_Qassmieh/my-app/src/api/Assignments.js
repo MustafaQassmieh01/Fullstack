@@ -2,7 +2,7 @@ export const Assignment = {}
 
 Assignment.getAssignments = async () => {
     try {
-        const response = await fetch('/api/assignments', {
+        const response = await fetch('http://localhost:5000/api/assignments', {
             method: 'GET',
             headers: {
                 'Content-Type': 'application/json'
